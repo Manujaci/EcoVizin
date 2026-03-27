@@ -31,16 +31,15 @@ section#pontos {
   background-color: #ebebeb;
   border-radius: 60px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 40px;
-  justify-content: space-between;
 }
 
 section#pontos .recycle-images {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: center;
+  align-items: center;
 }
 
 section#pontos .recycle-images img {
@@ -80,6 +79,22 @@ button {
 button:hover {
   background-color: #1b5e20;
 }
+
+@media screen and (min-width: 768px) {
+
+  section#pontos .recycle-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+  section#pontos .recycle-images img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+}
+}
+
 
 @media screen and (min-width: 1440px) {
   section#pontos {
